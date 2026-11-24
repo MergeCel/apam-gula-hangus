@@ -30,7 +30,7 @@ body::-webkit-scrollbar {
 body {
   margin: 0;
   color: var(--espresso);
-  background: #fff;
+  background: var(--paper);
   font-family: var(--font-poppins), Poppins, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -209,9 +209,33 @@ section[id] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-mask-image: radial-gradient(
+    ellipse 52% 32% at 50% 50%,
+    transparent 0 66%,
+    #000 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 52% 32% at 50% 50%,
+    transparent 0 66%,
+    #000 100%
+  );
 }
 
 @media (max-width: 900px) {
+  .hero-transition-frame {
+    background-size: 125% auto;
+    -webkit-mask-image: radial-gradient(
+      ellipse 70% 40% at 50% 50%,
+      transparent 0 70%,
+      #000 100%
+    );
+    mask-image: radial-gradient(
+      ellipse 70% 40% at 50% 50%,
+      transparent 0 70%,
+      #000 100%
+    );
+  }
+
   .hero-transition-frame:nth-child(1) {
     background-image: url("/images/hero-transition-tablet-1.webp") !important;
   }
@@ -224,6 +248,10 @@ section[id] {
 }
 
 @media (max-width: 640px) {
+  .hero-transition-frame {
+    background-size: 150% auto;
+  }
+
   .hero-transition-frame:nth-child(1) {
     background-image: url("/images/hero-transition-mobile-1.webp") !important;
   }
@@ -237,7 +265,7 @@ section[id] {
 
 @media (min-width: 901px) {
   .hero-transition-frame {
-    background-size: 100% 100%;
+    background-size: 110% 110%;
   }
 }
 
@@ -691,7 +719,7 @@ section[id] {
 .testimonials {
   position: relative;
   overflow: hidden;
-  padding: 120px 0 165px;
+  padding: 120px 0 100px;
 }
 
 .testimonial-heading {
@@ -906,7 +934,7 @@ section[id] {
 /* ---------- footer ---------- */
 footer {
   position: relative;
-  margin-top: 120px;
+  margin-top: 40px;
   padding: 92px 0 90px;
   color: var(--paper);
   background: var(--espresso);
@@ -1538,7 +1566,7 @@ footer::before {
   }
 
   .testimonials {
-    padding: 90px 0 120px;
+    padding: 90px 0 72px;
   }
 
   .testimonial-title-full {
@@ -1626,7 +1654,7 @@ footer::before {
   }
 
   footer {
-    margin-top: 90px;
+    margin-top: 32px;
     padding: 96px 40px 80px;
   }
 
