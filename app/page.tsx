@@ -8,7 +8,6 @@ import HeroTransition from "@/components/HeroTransition";
 import MenuCarousel from "@/components/MenuCarousel";
 import SiteFooter from "@/components/SiteFooter";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
-import { LineIcon } from "@/components/Icons";
 
 const GALLERY_ROTATIONS = [-4.52, -0.89, -2.97, -0.89];
 
@@ -84,18 +83,15 @@ export default function Home() {
                 key={item.title}
                 style={{ "--card-rotation": item.rotation } as CSSProperties}
               >
-                <span className="unique-card-media" aria-hidden="true">
-                  <Image
-                    src={data.unique.cardImage}
-                    alt=""
-                    fill
-                    sizes="(max-width: 900px) 340px, 420px"
-                  />
-                  <span className="unique-card-shade" />
-                </span>
-                <LineIcon name={item.icon} className="unique-icon" />
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
+                <Image
+                  className="unique-card-image"
+                  src={item.image}
+                  alt=""
+                  fill
+                  sizes="(max-width: 900px) 340px, 380px"
+                />
+                <h3 className="sr-only">{item.title}</h3>
+                <p className="sr-only">{item.description}</p>
               </article>
             ))}
           </div>

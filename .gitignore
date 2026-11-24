@@ -6,6 +6,7 @@ out
 .env.*.local
 .DS_Store
 *.tsbuildinfo
+.dev-server*.log
 docs
 .AGENTS
 .CHATBOT

@@ -29,25 +29,27 @@
   },
   "unique": {
     "title": "Keunikan Kami",
-    "background": "/images/unique-background.svg",
-    "cardImage": "/images/unique-card-photo.svg",
+    "background": "/images/Keunikan-bg.webp",
     "items": [
       {
         "icon": "aroma",
         "title": "Aroma karamel khas",
         "description": "Gula yang dimasak perlahan hingga kecokelatan menghasilkan wangi karamel panggang yang langsung menggugah selera sejak kotak dibuka.",
+        "image": "/images/cloud 1.png",
         "rotation": "2.04deg"
       },
       {
         "icon": "tekstur",
         "title": "Tekstur lembut dan manis",
-        "description": "Memiliki tekstur lembut, berpori halus, empuk, dan tetap lembut di suhu ruang dengan rasa manis legit serta sentuhan karamel yang pas tanpa terasa enek.",
+        "description": "Memiliki tekstur lembut dan berpori halus, dengan rasa manis karamel yang pas, dapat menjadi teman kopi dan tehmu.",
+        "image": "/images/cloud 2.png",
         "rotation": "-2.17deg"
       },
       {
         "icon": "inspirasi",
         "title": "Terinspirasi dari Brunei",
-        "description": "Mengadaptasi keaslian resep rumahan khas Brunei Darussalam yang dipadukan dengan bahan pilihan segar lokal di Kalimantan Barat.",
+        "description": "Mengadaptasi resep rumahan khas Brunei Darussalam untuk menghadirkan cita rasa autentik dalam setiap gigitan.",
+        "image": "/images/cloud 3.png",
         "rotation": "-3.82deg"
       }
     ]
