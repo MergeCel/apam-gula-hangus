@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="1600" viewBox="0 0 120 1600" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="bandv" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#B96F22"/><stop offset="0.5" stop-color="#D28B34"/><stop offset="1" stop-color="#C87D28"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bandv)" d="M30 0C20 130 55 240 48 380C40 520 22 650 30 800C38 950 70 1040 68 1190C66 1330 38 1450 45 1600L105 1600C98 1450 126 1330 128 1190C130 1040 98 950 90 800C82 650 100 520 108 380C115 240 80 130 90 0Z"/>
+</svg>

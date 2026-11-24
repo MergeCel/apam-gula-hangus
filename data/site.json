@@ -1,0 +1,160 @@
+{
+  "brand": {
+    "name": "Apam Gula Hangus",
+    "logo": "/images/logoapam.webp"
+  },
+  "navigation": [
+    { "label": "Beranda", "href": "/#beranda" },
+    { "label": "Kisah Kami", "href": "/#kisah" },
+    { "label": "Keunikan", "href": "/#keunikan" },
+    { "label": "Menu", "href": "/#menu" },
+    { "label": "Galeri", "href": "/#galeri" },
+    { "label": "Testimoni", "href": "/#testimoni" }
+  ],
+  "hero": {
+    "title": "Apam Gula Hangus",
+    "description": "Kue tradisional terinspirasi dari cita rasa Brunei, dengan tekstur lembut, manis yang pas, dan aroma karamel yang khas.",
+    "image": "/images/hero-apam.svg",
+    "transitions": [
+      "/images/Hero_Section transition 1.webp",
+      "/images/Hero_Section transition 2.webp",
+      "/images/Hero_Section transition 3.webp"
+    ]
+  },
+  "story": {
+    "title": "Berawal dari jalan-jalan, pulang-pulang membawa ide jualan",
+    "description": "Saat berkunjung ke Brunei, kami disuguhi kue tradisional disana, namanya **Apam Gula Hangus**. Sekilas mirip apam gula merah yang dikenal di Pontianak, tetapi ternyata memiliki tekstur dan karakter rasa yang berbeda. Dari pengalaman sederhana itu, lahirlah keinginan untuk memperkenalkan Apam Gula Hangus kepada lebih banyak orang.",
+    "image": "/images/story-apam.svg",
+    "imageAlt": "Placeholder foto apam gula hangus"
+  },
+  "unique": {
+    "title": "Keunikan Kami",
+    "background": "/images/unique-background.svg",
+    "cardImage": "/images/unique-card-photo.svg",
+    "items": [
+      {
+        "icon": "aroma",
+        "title": "Aroma karamel khas",
+        "description": "Gula yang dimasak perlahan hingga kecokelatan menghasilkan wangi karamel panggang yang langsung menggugah selera sejak kotak dibuka.",
+        "rotation": "2.04deg"
+      },
+      {
+        "icon": "tekstur",
+        "title": "Tekstur lembut dan manis",
+        "description": "Memiliki tekstur lembut, berpori halus, empuk, dan tetap lembut di suhu ruang dengan rasa manis legit serta sentuhan karamel yang pas tanpa terasa enek.",
+        "rotation": "-2.17deg"
+      },
+      {
+        "icon": "inspirasi",
+        "title": "Terinspirasi dari Brunei",
+        "description": "Mengadaptasi keaslian resep rumahan khas Brunei Darussalam yang dipadukan dengan bahan pilihan segar lokal di Kalimantan Barat.",
+        "rotation": "-3.82deg"
+      }
+    ]
+  },
+  "halal": {
+    "description": "Apam Gula Hangus sudah bersertifikat halal, jadi aman dinikmati seluruh keluarga.",
+    "logo": "/images/halal-logo.svg",
+    "background": "/images/halal-banner.svg"
+  },
+  "menu": {
+    "title": "Menu",
+    "products": [
+      {
+        "name": "Original",
+        "price": "Rp15.000",
+        "quantity": "isi 10 butir",
+        "image": "/images/menu-original.svg"
+      },
+      {
+        "name": "Cokelat",
+        "price": "Rp15.000",
+        "quantity": "isi 7 butir",
+        "image": "/images/menu-coklat.svg"
+      },
+      {
+        "name": "Keju",
+        "price": "Rp15.000",
+        "quantity": "isi 7 butir",
+        "image": "/images/menu-keju.svg"
+      }
+    ],
+    "cta": {
+      "text": "Pemesanan jumlah banyak? Hubungi kami!",
+      "button": "Hubungi Via WhatsApp",
+      "href": "https://wa.me/6280000000000"
+    }
+  },
+  "gallery": {
+    "title": "Galeri",
+    "items": [
+      { "caption": "Detail Serat & Tekstur Lembut", "image": "/images/gallery-detail.svg" },
+      { "caption": "Apam Gula Hangus Baru Matang", "image": "/images/gallery-fresh.svg" },
+      { "caption": "Pesanan Acara & Kumpul Keluarga", "image": "/images/gallery-order.svg" },
+      { "caption": "Teman Minum Teh Sore", "image": "/images/gallery-topping.svg" }
+    ]
+  },
+  "testimonials": {
+    "title": "Kata Mereka yang Sudah Mencoba",
+    "titleShort": "Kata Mereka",
+    "items": [
+      {
+        "name": "Ibu Rahmawati",
+        "location": "Sungai Raya, Kubu Raya · Pesanan Arisan",
+        "quote": "Pesan untuk suguhan arisan di rumah, ibu-ibu pada nanyain beli di mana. Anak-anak suka banget yang varian Cokelat, sedangkan yang dewasa rebutan.",
+        "rating": 1
+      },
+      {
+        "name": "habibi_Ibnuabdullah",
+        "location": "Mempawah Hilir · 3 Kotak Mix Varian",
+        "quote": "Apam gula hangusnya wajib dicoba! Kuenya padat tapi tetap lembut dan lumer di mulut. Rasanya enak banget, bikin ketagihan! 🍫",
+        "rating": 2
+      },
+      {
+        "name": "Nurul Huda Darmawan",
+        "location": "Pontianak Kota · Original & Keju",
+        "quote": "Terima kasih sudah membuat apam seenak ini! Apalagi varian cokelatnya, benar-benar best dan enak banget! 😍",
+        "rating": 3
+      },
+      {
+        "name": "Alya Maharani",
+        "location": "Kubu Raya · Keju",
+        "quote": "Kejunya melimpah, manisnya pas, dan datang masih fresh. Keluarga di rumah semua suka.",
+        "rating": 4
+      },
+      {
+        "name": "Dian Pratama",
+        "location": "Pontianak Timur · Coklat",
+        "quote": "Sudah pesan beberapa kali dan rasanya selalu konsisten. Bakal jadi langganan untuk acara keluarga.",
+        "rating": 5
+      }
+    ]
+  },
+  "footer": {
+    "hours": {
+      "title": "Jam Buka",
+      "description": "Setiap Hari jam **08.00 – 17.00 WIB** (Disarankan Pre-Order H-1 untuk jumlah banyak)"
+    },
+    "contact": {
+      "whatsappLabel": "08973171075",
+      "whatsappHref": "https://wa.me/628973171075"
+    },
+    "social": {
+      "title": "Ikuti Jejak Rasa",
+      "description": "Saksikan proses pembuatan karamel kental dan uap kukusan harian melalui kanal sosial kami:",
+      "links": [
+        { "label": "Instagram", "icon": "instagram", "href": "https://www.instagram.com/apamgula.hangus?utm_source=ig_web_button_share_sheet&dlrf=ZDNlZDc0MzIxNw==" },
+        { "label": "WhatsApp", "icon": "whatsapp", "href": "https://wa.me/628973171075" },
+        { "label": "TikTok", "icon": "tiktok", "href": "https://www.tiktok.com/@apamgula.hangus?is_from_webapp=1&sender_device=pc" }
+      ]
+    },
+    "address": "Kuala Secapah, Kec. Mempawah Hilir, Kab. Mempawah, Kalimantan Barat 78914",
+    "map": {
+      "image": "/images/map-location.svg",
+      "button": "Buka Peta Lokasi",
+      "href": "https://maps.app.goo.gl/KwCaDdzsWWjAavRA8?g_st=ic"
+    }
+  }
+}
+
+
