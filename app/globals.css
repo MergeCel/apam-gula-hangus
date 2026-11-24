@@ -211,6 +211,30 @@ section[id] {
   background-size: cover;
 }
 
+@media (max-width: 900px) {
+  .hero-transition-frame:nth-child(1) {
+    background-image: url("/images/hero-transition-tablet-1.webp") !important;
+  }
+  .hero-transition-frame:nth-child(2) {
+    background-image: url("/images/hero-transition-tablet-2.webp") !important;
+  }
+  .hero-transition-frame:nth-child(3) {
+    background-image: url("/images/hero-transition-tablet-3.webp") !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-transition-frame:nth-child(1) {
+    background-image: url("/images/hero-transition-mobile-1.webp") !important;
+  }
+  .hero-transition-frame:nth-child(2) {
+    background-image: url("/images/hero-transition-mobile-2.webp") !important;
+  }
+  .hero-transition-frame:nth-child(3) {
+    background-image: url("/images/hero-transition-mobile-3.webp") !important;
+  }
+}
+
 @media (min-width: 901px) {
   .hero-transition-frame {
     background-size: 100% 100%;
@@ -341,7 +365,9 @@ section[id] {
 .halal-bg {
   z-index: 0;
   object-fit: cover;
-  transform: scale(1.7);
+  object-position: 44% center;
+  filter: brightness(0.78);
+  transform: scale(1.7) translateX(-4%);
 }
 
 .halal-pill::after {
@@ -349,7 +375,7 @@ section[id] {
   z-index: 1;
   inset: 0;
   content: "";
-  background: rgba(33, 16, 7, 0.55);
+  background: rgba(33, 16, 7, 0.68);
 }
 
 .halal-content {
@@ -362,11 +388,15 @@ section[id] {
 }
 
 .halal-content p {
-  max-width: 540px;
+  max-width: 520px;
   margin: 0;
-  font-size: 14.5px;
+  font-size: 13.5px;
   line-height: 1.6;
   text-align: center;
+}
+
+.halal-content strong {
+  font-weight: 700;
 }
 
 /* ---------- menu ---------- */
@@ -877,7 +907,7 @@ section[id] {
 footer {
   position: relative;
   margin-top: 120px;
-  padding: 145px 0 90px;
+  padding: 92px 0 90px;
   color: var(--paper);
   background: var(--espresso);
 }
@@ -902,9 +932,9 @@ footer::before {
   grid-template-columns: 1fr 1fr 320px;
   column-gap: 80px;
   row-gap: 60px;
-  width: min(var(--container), calc(100% - 96px));
-  margin: 0 40px 0 auto;
-  padding-top: 28px;
+  width: min(var(--container), calc(100% - 160px));
+  margin: 0 auto;
+  padding-top: 6px;
 }
 
 .footer-hours h3,
@@ -1157,7 +1187,7 @@ footer::before {
   .story-pill {
     width: 210px;
     max-width: 62vw;
-    height: 78px;
+    height: 64px;
     margin-bottom: 32px;
   }
 
@@ -1188,7 +1218,7 @@ footer::before {
   .unique-grid {
     grid-template-columns: 1fr;
     gap: 0;
-    width: min(340px, calc(100% - 40px));
+    width: min(280px, calc(100% - 56px));
   }
 
   .unique-card {
@@ -1226,8 +1256,8 @@ footer::before {
   }
 
   .halal-content p {
-    max-width: 300px;
-    font-size: 12.5px;
+    max-width: 290px;
+    font-size: 11.5px;
     line-height: 1.5;
   }
 
@@ -1597,7 +1627,7 @@ footer::before {
 
   footer {
     margin-top: 90px;
-    padding: 145px 24px 88px;
+    padding: 96px 40px 80px;
   }
 
   footer::before {
@@ -1614,9 +1644,9 @@ footer::before {
   .footer-inner {
     grid-template-columns: 1fr;
     column-gap: 0;
-    row-gap: 56px;
+    row-gap: 48px;
     width: 100%;
-    padding-top: 22px;
+    padding-top: 4px;
   }
 
   .footer-hours h3,

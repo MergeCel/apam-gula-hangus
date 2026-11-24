@@ -57,7 +57,7 @@ export default function Home() {
               src={data.story.image}
               alt={data.story.imageAlt}
               fill
-              sizes="(max-width: 900px) 200px, 430px"
+              sizes="(max-width: 900px) 210px, 430px"
             />
           </div>
           <h2>{data.story.title}</h2>
@@ -107,7 +107,9 @@ export default function Home() {
               sizes="(max-width: 900px) 90vw, 1320px"
             />
             <div className="halal-content">
-              <p>{data.halal.description}</p>
+              <p>
+                <RichText text={data.halal.description} />
+              </p>
             </div>
           </div>
         </section>

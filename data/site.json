@@ -55,7 +55,7 @@
     ]
   },
   "halal": {
-    "description": "Kami memastikan setiap bahan yang kami gunakan sudah tersertifikasi halal.",
+    "description": "Kami memastikan setiap bahan yang kami gunakan sudah **tersertifikasi halal**.",
     "background": "/images/halal-bg.webp"
   },
   "menu": {
