@@ -107,12 +107,6 @@ export default function Home() {
               sizes="(max-width: 900px) 90vw, 1320px"
             />
             <div className="halal-content">
-              <Image
-                src={data.halal.logo}
-                alt="Placeholder logo Halal Indonesia"
-                width={96}
-                height={116}
-              />
               <p>{data.halal.description}</p>
             </div>
           </div>
@@ -127,7 +121,7 @@ export default function Home() {
                   <div className="product-image">
                     <Image
                       src={product.image}
-                      alt={`Placeholder foto apam rasa ${product.name}`}
+                      alt={`Apam gula hangus rasa ${product.name}`}
                       fill
                       sizes="(max-width: 900px) 90vw, 400px"
                     />

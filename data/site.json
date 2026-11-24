@@ -14,7 +14,7 @@
   "hero": {
     "title": "Apam Gula Hangus",
     "description": "Kue tradisional terinspirasi dari cita rasa Brunei, dengan tekstur lembut, manis yang pas, dan aroma karamel yang khas.",
-    "image": "/images/hero-apam.svg",
+    "image": "/images/hero-section-bg.webp",
     "transitions": [
       "/images/Hero_Section transition 1.webp",
       "/images/Hero_Section transition 2.webp",
@@ -24,8 +24,8 @@
   "story": {
     "title": "Berawal dari jalan-jalan, pulang-pulang membawa ide jualan",
     "description": "Saat berkunjung ke Brunei, kami disuguhi kue tradisional disana, namanya **Apam Gula Hangus**. Sekilas mirip apam gula merah yang dikenal di Pontianak, tetapi ternyata memiliki tekstur dan karakter rasa yang berbeda. Dari pengalaman sederhana itu, lahirlah keinginan untuk memperkenalkan Apam Gula Hangus kepada lebih banyak orang.",
-    "image": "/images/story-apam.svg",
-    "imageAlt": "Placeholder foto apam gula hangus"
+    "image": "/images/kisah-kami.png",
+    "imageAlt": "Apam gula hangus dengan tekstur lembut dan aroma karamel"
   },
   "unique": {
     "title": "Keunikan Kami",
@@ -55,9 +55,8 @@
     ]
   },
   "halal": {
-    "description": "Apam Gula Hangus sudah bersertifikat halal, jadi aman dinikmati seluruh keluarga.",
-    "logo": "/images/halal-logo.svg",
-    "background": "/images/halal-banner.svg"
+    "description": "Kami memastikan setiap bahan yang kami gunakan sudah tersertifikasi halal.",
+    "background": "/images/halal-bg.webp"
   },
   "menu": {
     "title": "Menu",
@@ -66,25 +65,25 @@
         "name": "Original",
         "price": "Rp15.000",
         "quantity": "isi 10 butir",
-        "image": "/images/menu-original.svg"
+        "image": "/images/menu-original.jpg"
       },
       {
         "name": "Cokelat",
         "price": "Rp15.000",
         "quantity": "isi 7 butir",
-        "image": "/images/menu-coklat.svg"
+        "image": "/images/menu-coklat.webp"
       },
       {
         "name": "Keju",
         "price": "Rp15.000",
         "quantity": "isi 7 butir",
-        "image": "/images/menu-keju.svg"
+        "image": "/images/menu-keju.webp"
       }
     ],
     "cta": {
       "text": "Pemesanan jumlah banyak? Hubungi kami!",
       "button": "Hubungi Via WhatsApp",
-      "href": "https://wa.me/6280000000000"
+      "href": "https://wa.me/628973171075"
     }
   },
   "gallery": {
@@ -152,7 +151,6 @@
     },
     "address": "Kuala Secapah, Kec. Mempawah Hilir, Kab. Mempawah, Kalimantan Barat 78914",
     "map": {
-      "image": "/images/map-location.svg",
       "button": "Buka Peta Lokasi",
       "href": "https://maps.app.goo.gl/KwCaDdzsWWjAavRA8?g_st=ic"
     }
