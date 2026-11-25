@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import data from "@/data/site.json";
 import { LineIcon } from "./Icons";
@@ -17,10 +18,6 @@ function RichText({ text }: { text: string }) {
 }
 
 export default function SiteFooter() {
-  const mapEmbed = `https://www.google.com/maps?q=${encodeURIComponent(
-    data.footer.address
-  )}&output=embed`;
-
   return (
     <footer>
       <div className="footer-inner">
@@ -54,12 +51,11 @@ export default function SiteFooter() {
         </div>
 
         <div className="footer-map">
-          <iframe
-            src={mapEmbed}
-            title={`Peta lokasi ${data.footer.address}`}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
+          <Image
+            src="/images/map-location.jpg"
+            alt={`Peta lokasi ${data.footer.address}`}
+            fill
+            sizes="(max-width: 900px) 90vw, 320px"
           />
           <a
             className="map-button"

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="200" height="240" viewBox="0 0 200 240">
-  <g fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M100 14c26 30 44 62 44 96 0 34-20 58-44 72-24-14-44-38-44-72 0-34 18-66 44-96z"/>
-    <path d="M100 52c14 22 24 42 24 62 0 22-11 38-24 47-13-9-24-25-24-47 0-20 10-40 24-62z"/>
-    <path d="M100 96v42"/>
-  </g>
-  <text x="100" y="214" text-anchor="middle" font-family="Arial" font-size="30" font-weight="bold" fill="#ffffff">HALAL</text>
-  <text x="100" y="234" text-anchor="middle" font-family="Arial" font-size="15" letter-spacing="4" fill="#ffffff">INDONESIA</text>
-</svg>

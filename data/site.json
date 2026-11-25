@@ -89,10 +89,10 @@
   "gallery": {
     "title": "Galeri",
     "items": [
-      { "caption": "Detail Serat & Tekstur Lembut", "image": "/images/gallery-detail.svg" },
-      { "caption": "Apam Gula Hangus Baru Matang", "image": "/images/gallery-fresh.svg" },
-      { "caption": "Pesanan Acara & Kumpul Keluarga", "image": "/images/gallery-order.svg" },
-      { "caption": "Teman Minum Teh Sore", "image": "/images/gallery-topping.svg" }
+      { "caption": "Detail Serat & Tekstur Lembut", "image": "/images/hero-section-bg.webp" },
+      { "caption": "Apam Gula Hangus Baru Matang", "image": "/images/hero-section-bg.webp" },
+      { "caption": "Pesanan Acara & Kumpul Keluarga", "image": "/images/hero-section-bg.webp" },
+      { "caption": "Teman Minum Teh Sore", "image": "/images/hero-section-bg.webp" }
     ]
   },
   "testimonials": {

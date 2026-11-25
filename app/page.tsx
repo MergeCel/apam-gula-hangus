@@ -181,7 +181,7 @@ export default function Home() {
                 >
                   <Image
                     src={item.image}
-                    alt={`Placeholder ${item.caption}`}
+                    alt={`Galeri apam gula hangus: ${item.caption}`}
                     fill
                     sizes="(max-width: 600px) 45vw, (max-width: 1200px) 22vw, 285px"
                   />
