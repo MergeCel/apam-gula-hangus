@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState, type CSSProperties } from "react";
 import { LineIcon } from "./Icons";
 
@@ -7,48 +8,68 @@ type Testimonial = {
   name: string;
   location: string;
   quote: string;
+  image: string;
   rating: number;
 };
+
+const MAX_VISIBLE = 3;
 
 export default function TestimonialCarousel({
   testimonials
 }: {
   testimonials: Testimonial[];
 }) {
-  const [index, setIndex] = useState(0);
-  const [visible, setVisible] = useState(3);
+  const [visible, setVisible] = useState(MAX_VISIBLE);
+  const total = testimonials.length;
+
+  // Three copies of the list: the visible window always sits on the middle
+  // copy, so it can slide either way forever. Whenever the window drifts onto
+  // an outer copy it is silently re-centred, which looks identical.
+  const canLoop = total > visible;
+  const rendered = canLoop
+    ? [...testimonials, ...testimonials, ...testimonials]
+    : testimonials;
+
+  const [offset, setOffset] = useState(total);
 
   useEffect(() => {
     const query = window.matchMedia("(max-width: 900px)");
-    const update = () => setVisible(query.matches ? 1 : 3);
+    const update = () => setVisible(query.matches ? 1 : MAX_VISIBLE);
     update();
     query.addEventListener("change", update);
     return () => query.removeEventListener("change", update);
   }, []);
 
-  const maxIndex = Math.max(0, testimonials.length - visible);
-  const currentIndex = Math.min(index, maxIndex);
+  const recentre = (value: number) => {
+    if (!canLoop || total === 0) return value;
+    if (value < total) return value + total;
+    if (value >= total * 2) return value - total;
+    return value;
+  };
+
+  const shift = (direction: number) => {
+    if (total === 0) return;
+    setOffset((value) => {
+      if (!canLoop) {
+        const maxIndex = Math.max(0, total - visible);
+        return Math.min(maxIndex, Math.max(0, value + direction));
+      }
+      return recentre(value + direction);
+    });
+  };
 
   useEffect(() => {
-    if (visible !== 1) return;
-    const timer = window.setInterval(() => {
-      setIndex((value) => (value >= maxIndex ? 0 : value + 1));
-    }, 2000);
+    if (visible !== 1 || !canLoop) return;
+    const timer = window.setInterval(() => shift(1), 2000);
     return () => window.clearInterval(timer);
-  }, [visible, maxIndex]);
-
-  const goTo = (direction: number) => {
-    if (maxIndex === 0) return;
-    const nextIndex = currentIndex + direction;
-    const wrappedIndex =
-      nextIndex < 0 ? maxIndex : nextIndex > maxIndex ? 0 : nextIndex;
-    setIndex(wrappedIndex);
-  };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [visible, canLoop, total]);
 
   const trackStyle = {
     "--visible": visible,
     "--testimonial-gap": "1.5rem",
-    transform: `translateX(calc(${-currentIndex} * (100% + var(--testimonial-gap)) / var(--visible)))`
+    transform: `translateX(calc(${-offset} * (100% + var(--testimonial-gap)) / var(--visible)))`,
+    transition: "none"
   } as CSSProperties;
 
   return (
@@ -56,8 +77,8 @@ export default function TestimonialCarousel({
       <button
         type="button"
         className="carousel-arrow"
-        onClick={() => goTo(-1)}
-        disabled={maxIndex === 0}
+        onClick={() => shift(-1)}
+        disabled={total === 0}
         aria-label="Testimoni sebelumnya"
       >
         <LineIcon name="chevron-left" />
@@ -70,25 +91,25 @@ export default function TestimonialCarousel({
         aria-label="Testimoni pelanggan"
       >
         <div
-          className={`testimonial-track${visible === 1 ? " is-auto" : ""}`}
+          className={`testimonial-track${visible === 1 ? " is-auto" : ""}${
+            canLoop ? " is-loop" : ""
+          }`}
           style={trackStyle}
         >
-          {testimonials.map((item, itemIndex) => (
+          {rendered.map((item, itemIndex) => (
             <article
-              className={`testimonial-card ${
-                itemIndex % 3 === 0 ? "badge-left" : "badge-right"
-              }`}
+              className="testimonial-card"
               key={`${item.name}-${itemIndex}`}
+              aria-hidden={
+                itemIndex < total || itemIndex >= total * 2 ? true : undefined
+              }
             >
-              <div className="testimonial-person">
-                <span className="avatar">{item.name.trim().charAt(0).toUpperCase()}</span>
-                <div>
-                  <strong>{item.name}</strong>
-                  <small>{item.location}</small>
-                </div>
-              </div>
-              <p className="testimonial-quote">“{item.quote}”</p>
-              <span className="rating-badge">{item.rating}</span>
+              <Image
+                src={item.image}
+                alt={`Testimoni ${item.name}`}
+                fill
+                sizes="(max-width: 900px) 90vw, 360px"
+              />
             </article>
           ))}
         </div>
@@ -97,8 +118,8 @@ export default function TestimonialCarousel({
       <button
         type="button"
         className="carousel-arrow"
-        onClick={() => goTo(1)}
-        disabled={maxIndex === 0}
+        onClick={() => shift(1)}
+        disabled={total === 0}
         aria-label="Testimoni berikutnya"
       >
         <LineIcon name="chevron-right" />

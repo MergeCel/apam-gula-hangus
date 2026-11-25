@@ -165,7 +165,9 @@ export default function MenuCarousel({ products }: { products: Product[] }) {
             <span className="menu-mobile-info">
               <span className="menu-mobile-name">{product.name}</span>
               <span className="menu-mobile-price">{product.price}</span>
-              <span className="menu-mobile-qty">{product.quantity}</span>
+              <span className="menu-mobile-qty">
+                {product.quantity}
+              </span>
             </span>
           </button>
         ))}

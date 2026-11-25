@@ -40,7 +40,19 @@ export default function Home() {
             priority
             sizes="100vw"
           />
-          <HeroTransition images={data.hero.transitions} />
+          <HeroTransition
+            images={data.hero.transitions}
+            tabletImages={[
+              "/images/hero-transition-tablet-1-gap.svg",
+              "/images/hero-transition-tablet-2-gap.svg",
+              "/images/hero-transition-tablet-3-gap.svg"
+            ]}
+            mobileImages={[
+              "/images/hero-transition-mobile1.webp",
+              "/images/hero-transition-mobile2.webp",
+              "/images/hero-transition-mobile3.webp"
+            ]}
+          />
           <div className="hero-content">
             <h1>
               {data.hero.title.split(" ").map((word) => (
@@ -223,7 +235,7 @@ export default function Home() {
           <TestimonialCarousel testimonials={data.testimonials.items} />
           <Image
             className="doodle doodle-mobile-left"
-            src="/images/Group 30.svg"
+            src="/images/Group 38.svg"
             alt=""
             width={69}
             height={76}

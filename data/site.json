@@ -36,21 +36,21 @@
         "title": "Aroma karamel khas",
         "description": "Gula yang dimasak perlahan hingga kecokelatan menghasilkan wangi karamel panggang yang langsung menggugah selera sejak kotak dibuka.",
         "image": "/images/cloud 1.png",
-        "rotation": "2.04deg"
+        "rotation": "4deg"
       },
       {
         "icon": "tekstur",
         "title": "Tekstur lembut dan manis",
         "description": "Memiliki tekstur lembut dan berpori halus, dengan rasa manis karamel yang pas, dapat menjadi teman kopi dan tehmu.",
         "image": "/images/cloud 2.png",
-        "rotation": "-2.17deg"
+        "rotation": "-4.5deg"
       },
       {
         "icon": "inspirasi",
         "title": "Terinspirasi dari Brunei",
         "description": "Mengadaptasi resep rumahan khas Brunei Darussalam untuk menghadirkan cita rasa autentik dalam setiap gigitan.",
         "image": "/images/cloud 3.png",
-        "rotation": "-3.82deg"
+        "rotation": "-7deg"
       }
     ]
   },
@@ -64,19 +64,19 @@
       {
         "name": "Original",
         "price": "Rp15.000",
-        "quantity": "isi 10 butir",
+        "quantity": "10 butir/kotak",
         "image": "/images/menu-original.jpg"
       },
       {
         "name": "Cokelat",
         "price": "Rp15.000",
-        "quantity": "isi 7 butir",
+        "quantity": "7 butir/kotak",
         "image": "/images/menu-coklat.webp"
       },
       {
         "name": "Keju",
         "price": "Rp15.000",
-        "quantity": "isi 7 butir",
+        "quantity": "7 butir/kotak",
         "image": "/images/menu-keju.webp"
       }
     ],
@@ -103,30 +103,35 @@
         "name": "Ibu Rahmawati",
         "location": "Sungai Raya, Kubu Raya · Pesanan Arisan",
         "quote": "Pesan untuk suguhan arisan di rumah, ibu-ibu pada nanyain beli di mana. Anak-anak suka banget yang varian Cokelat, sedangkan yang dewasa rebutan.",
+        "image": "/images/testi1.webp",
         "rating": 1
       },
       {
         "name": "habibi_Ibnuabdullah",
         "location": "Mempawah Hilir · 3 Kotak Mix Varian",
         "quote": "Apam gula hangusnya wajib dicoba! Kuenya padat tapi tetap lembut dan lumer di mulut. Rasanya enak banget, bikin ketagihan! 🍫",
+        "image": "/images/testi2.webp",
         "rating": 2
       },
       {
         "name": "Nurul Huda Darmawan",
         "location": "Pontianak Kota · Original & Keju",
         "quote": "Terima kasih sudah membuat apam seenak ini! Apalagi varian cokelatnya, benar-benar best dan enak banget! 😍",
+        "image": "/images/testi3.webp",
         "rating": 3
       },
       {
-        "name": "Alya Maharani",
-        "location": "Kubu Raya · Keju",
-        "quote": "Kejunya melimpah, manisnya pas, dan datang masih fresh. Keluarga di rumah semua suka.",
+        "name": "dheairvanda",
+        "location": "Mempawah Hilir · 3 Kotak Mix Varian",
+        "quote": "Sedap betol kue ini. Rezeki nda kemane dari Mempawah sampai ke Pontianak, jazakumullah khair.",
+        "image": "/images/testi4.webp",
         "rating": 4
       },
       {
-        "name": "Dian Pratama",
-        "location": "Pontianak Timur · Coklat",
-        "quote": "Sudah pesan beberapa kali dan rasanya selalu konsisten. Bakal jadi langganan untuk acara keluarga.",
+        "name": "rinapru23",
+        "location": "Pontianak Kota · Original & Keju",
+        "quote": "Allahumma Baarik, terima kasih apam gula hangusnya uma dan buya. Apam gula hangusnya enak sekali, teksturnya lembut, manisnya pas.",
+        "image": "/images/testi5.webp",
         "rating": 5
       }
     ]
