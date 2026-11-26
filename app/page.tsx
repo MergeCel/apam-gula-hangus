@@ -244,7 +244,7 @@ export default function Home() {
       </main>
 
       <a className="chatbot-fab" href="/chatbot" aria-label="Buka Chatbot Pampam">
-        <Image src="/images/pampam-coklat.png" alt="" width={120} height={120} />
+        <Image src="/images/new-pampam-coklat.png" alt="" width={120} height={120} />
       </a>
 
       <SiteFooter />
