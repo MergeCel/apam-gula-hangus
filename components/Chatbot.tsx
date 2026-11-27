@@ -29,6 +29,10 @@ const THINKING_DELAY = 850;
 const AI_LIMIT = 10;
 const AI_WINDOW = 60_000;
 
+// Bumped whenever the artwork changes so browsers do not keep serving a
+// previously cached copy of the avatar.
+const PAMPAM_AVATAR = "/images/pampam-putih-v2.png";
+
 function wait(ms: number) {
   return new Promise((resolve) => window.setTimeout(resolve, ms));
 }
@@ -298,7 +302,7 @@ export default function Chatbot() {
     <div className="chatbot-card">
       <div className="chatbot-card-header">
         <Image
-          src="/images/pampam-putih.png"
+          src={PAMPAM_AVATAR}
           alt="Pampam"
           width={44}
           height={44}
@@ -320,7 +324,7 @@ export default function Chatbot() {
           <div className={`chat-message ${message.role}`} key={message.id}>
             {message.role === "bot" && (
               <Image
-                src="/images/pampam-putih.png"
+                src={PAMPAM_AVATAR}
                 alt=""
                 width={28}
                 height={28}
@@ -356,7 +360,7 @@ export default function Chatbot() {
             aria-label="Pampam sedang mengetik"
           >
             <Image
-              src="/images/pampam-putih.png"
+              src={PAMPAM_AVATAR}
               alt=""
               width={28}
               height={28}

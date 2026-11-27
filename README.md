@@ -105,7 +105,7 @@ Logo asli memakai `logoapam.webp`. Doodle memakai `Group 38.svg` dan `Group 30.s
 ## Chatbot Pampam
 
 - Tombol bulat `new-pampam-coklat.png` ada di kanan bawah halaman utama dan membuka route `/chatbot`.
-- Halaman chatbot memakai logo `pampam-putih.png` pada header dan avatar pesan bot.
+- Halaman chatbot memakai logo `pampam-putih-v2.png` pada header dan avatar pesan bot.
 - Pilihan topik cepat: **Lihat Menu**, **Jam Buka**, **Kontak**, dan **Lokasi**.
 - Data pasti (menu, harga, isi kotak, jam, kontak, lokasi, halal, cara pesan) memakai respons lokal deterministik.
 - Pertanyaan bebas memakai retrieval knowledge base. Jika API key Gemini tersedia, jawaban disusun oleh Gemini; jika tidak, Pampam memakai jawaban fallback dari dokumen yang paling relevan.
