@@ -66,9 +66,9 @@ write(
 </svg>`
 );
 
-/* ---------- testimonial doodle pattern ---------- */
+/* ---------- doodle paper pattern ---------- */
 write(
-  "testimonial-pattern.svg",
+  "doodle-pattern.svg",
   `<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
   <g fill="none" stroke="#dcc4a0" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" opacity="0.55">
     <circle cx="22" cy="22" r="7"/>

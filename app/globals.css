@@ -1950,7 +1950,7 @@ footer::before {
   overflow-y: auto;
   padding: 22px 24px;
   background-color: #fbf6ec;
-  background-image: url("/images/testimonial-pattern.svg");
+  background-image: url("/images/doodle-pattern.svg");
   scroll-behavior: smooth;
 }
 

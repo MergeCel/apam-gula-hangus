@@ -71,7 +71,7 @@ Setiap gambar memiliki nama yang menjelaskan peruntukannya:
 | `halal-banner.svg`, `halal-logo.svg` | pil halal dan logo placeholder |
 | `menu-original.svg`, `menu-coklat.svg`, `menu-keju.svg` | foto menu |
 | `gallery-*.svg` | empat foto galeri |
-| `testimonial-pattern.svg` | pola kertas kartu testimoni |
+| `doodle-pattern.svg` | pola kertas area chat dan kartu |
 | `map-location.svg` | peta footer |
 
 Ganti isi file dengan foto asli memakai nama yang sama, atau ubah path di `data/site.json`. Karena gambar di-cache satu tahun, gunakan nama file baru atau tambahkan `?v=2` jika mengganti gambar dengan nama yang sama. Untuk membuat ulang seluruh placeholder:
